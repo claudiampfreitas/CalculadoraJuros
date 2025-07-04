@@ -4,7 +4,8 @@ using System.Windows.Forms;
 
 namespace CalculadoraJuros
 {
-	public partial class FrmJurosSimples : Form
+	
+    public partial class FrmJurosSimples : Form
 	{
 		public FrmJurosSimples()
 		{
@@ -14,36 +15,41 @@ namespace CalculadoraJuros
 		{
 			if (optcapital.Checked==true)
 			{
-				double juros = double.Parse(txtjuros.Text);
-				double taxa = double.Parse(txttaxa.Text) / 100.0;
-				int periodo = int.Parse(txtperiodo.Text);
+
+				bool jurosEntrada = double.TryParse(txtjuros.Text, out double juros);
+				bool taxaEntrada = double.TryParse(txttaxa.Text, out double taxas);
+				double taxa=taxas / 100;
+				bool periodoEntrada = double.TryParse(txtperiodo.Text, out double periodo);
 				
 				double capital = juros/(taxa*periodo);
 				txtcapital.Text = Math.Round(capital, 2).ToString();
 			}
+
 			if (optjuros.Checked==true)
 			{
-				double taxa = double.Parse(txttaxa.Text) / 100.0;
-				int periodo = int.Parse(txtperiodo.Text);
-				double capital = double.Parse(txtcapital.Text);
+				bool taxaEntrada = double.TryParse(txttaxa.Text, out double taxa);
+				double taxas=taxa / 100;
+				bool periodoEntrada = double.TryParse(txtperiodo.Text, out double periodo);
+				bool capitalEntrada = double.TryParse(txtcapital.Text, out double capital);
 				
 				double juros = capital*taxa*periodo;
 				txtjuros.Text = Math.Round(juros, 2).ToString();
 			}
 			if (optperiodo.Checked==true)
 			{
-				double taxa = double.Parse(txttaxa.Text) / 100.0;
-				double capital = double.Parse(txtcapital.Text);
-				double juros = double.Parse(txtjuros.Text);
+				bool taxaEntrada = double.TryParse(txttaxa.Text, out double taxa);
+				double taxas=taxa / 100;
+				bool capitalEntrada = double.TryParse(txtcapital.Text, out double capital);
+				bool jurosEntrada = double.TryParse(txtjuros.Text, out double juros);
 				
 				int periodo = (int)(juros/(capital*taxa));
 				txtperiodo.Text = periodo.ToString();
 			}
 			if (opttaxa.Checked==true)
 			{
-				int periodo = int.Parse(txtperiodo.Text);
-				double capital = double.Parse(txtcapital.Text);
-				double juros = double.Parse(txtjuros.Text);
+				bool periodoEntrada = double.TryParse(txtperiodo.Text, out double periodo);
+				bool capitalEntrada = double.TryParse(txtcapital.Text, out double capital);
+				bool jurosEntrada = double.TryParse(txtjuros.Text, out double juros);
 				
 				double taxa = (juros/(capital*periodo)) * 100;
 				txttaxa.Text = Math.Round(taxa, 2).ToString();

@@ -36,3 +36,17 @@ D:\Projetos prontos\CalculadoraJuros\CalculadoraJuros\obj\Debug\CalculadoraJuros
 D:\Projetos prontos\CalculadoraJuros\CalculadoraJuros\obj\Debug\CalculadoraJuros.csproj.GenerateResource.Cache
 D:\Projetos prontos\CalculadoraJuros\CalculadoraJuros\obj\Debug\CalculadoraJuros.exe
 D:\Projetos prontos\CalculadoraJuros\CalculadoraJuros\obj\Debug\CalculadoraJuros.pdb
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\bin\Debug\CalculadoraJuros.exe.config
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\bin\Debug\CalculadoraJuros.exe
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\bin\Debug\CalculadoraJuros.pdb
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.csproj.AssemblyReference.cache
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.FrmFormulas.resources
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.FrmJurosCompostos.resources
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.FrmJurosSimples.resources
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.FrmMontanteCompostos.resources
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.FrmMontanteSimples.resources
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.MainForm.resources
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.csproj.GenerateResource.cache
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.csproj.CoreCompileInputs.cache
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.exe
+C:\Users\luiz\Desktop\CalculadoraJuros-main\CalculadoraJuros\obj\Debug\CalculadoraJuros.pdb

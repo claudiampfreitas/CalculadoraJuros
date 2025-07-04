@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectGuid>{3F10E66A-FB93-4A39-A49E-AD7FD687F598}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -8,8 +8,9 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>CalculadoraJuros</RootNamespace>
     <AssemblyName>CalculadoraJuros</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -29,6 +30,12 @@
     <Optimize>True</Optimize>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp">
@@ -50,27 +57,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmFormulas.cs" />
+    <Compile Include="FrmFormulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmFormulas.Designer.cs">
       <DependentUpon>FrmFormulas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmJurosCompostos.cs" />
+    <Compile Include="FrmJurosCompostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmJurosCompostos.Designer.cs">
       <DependentUpon>FrmJurosCompostos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmJurosSimples.cs" />
+    <Compile Include="FrmJurosSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmJurosSimples.Designer.cs">
       <DependentUpon>FrmJurosSimples.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMontanteCompostos.cs" />
+    <Compile Include="FrmMontanteCompostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMontanteCompostos.Designer.cs">
       <DependentUpon>FrmMontanteCompostos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMontanteSimples.cs" />
+    <Compile Include="FrmMontanteSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMontanteSimples.Designer.cs">
       <DependentUpon>FrmMontanteSimples.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
